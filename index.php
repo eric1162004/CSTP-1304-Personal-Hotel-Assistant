@@ -1,6 +1,6 @@
 <?php 
 require_once("inc/utilities/Shared.class.php");
-Shared::header("Personal Hotel App Login", "css/signInPage.css");
+Shared::header("Personal Hotel App Login");
 ?>
 
 <div class="row fullheight valign-wrapper">

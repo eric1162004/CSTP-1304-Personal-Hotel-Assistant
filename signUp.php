@@ -1,6 +1,6 @@
 <?php 
 require_once("inc/utilities/Shared.class.php");
-Shared::header("Personal Hotel App Login", "css/signInPage.css");
+Shared::header("Personal Hotel App Login");
 ?>
 
 <div class="row fullheight valign-wrapper">
@@ -8,7 +8,9 @@ Shared::header("Personal Hotel App Login", "css/signInPage.css");
 <div class="row center-align">
     <div class="col">
 
+    <a href="index.php">
     <img src="assets/hotelLogo.png" alt="hotel logo" width="200px">
+    </a>
 
     <h4 class="bold">Sign Up</h4>
 
@@ -52,7 +54,7 @@ Shared::header("Personal Hotel App Login", "css/signInPage.css");
         <span>I agree to the terms & conditions.</span>
     </label>
 
-    <a href="signUp.php">
+    <a href="checkIn.php">
         <button class="waves-effect waves-light btn" name="signUpBtn">Sign Up</button>
     </a>
 
