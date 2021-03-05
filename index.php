@@ -55,6 +55,7 @@ Shared::header("Personal Hotel App Login");
     </div>
 </div>
 
+<script src="js/home.js"></script>
 
 <?php
 Shared::footer();
