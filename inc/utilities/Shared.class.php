@@ -29,7 +29,7 @@ class Shared {
 
                 <title><?php echo $title ?></title>
             </head>
-            <body>
+            <body class="color-change-2x">
 
     <?php }
 
@@ -47,23 +47,23 @@ class Shared {
 
     <?php }
 
-    static function navbar($msg="Stay with us feel like home.", $msgClassStr="cyan lighten-1") { ?>
+    static function navbar($msg="Stay with us feel like home.", $msgClassStr="cyan lighten-1 grey-text text-darken-3") { ?>
 
-        <nav class="z-depth-2">
+        <nav class="z-depth-1">
         <div class="container row">
 
         <div class="col">
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-        <span class="bold" style="font-size:large">Good Day, Rahim</span>
+        <span class="bold" style="font-size:1.6em">Good Day, Rahim</span>
         </div>
 
         <div class="col right">
         <ul class="hide-on-small-only">
             <li>
-                <a href="#"><i class="fas fa-headset"></i></a>
+            <a href="#"><i class="fas fa-headset"></i></a>
             </li>
             <li>
-                <i class="fas fa-sign-out-alt"></i>
+            <a href="index.php"><i class="fas fa-sign-out-alt"></i></a>
             </li>
         </ul>
         </div>
@@ -73,7 +73,7 @@ class Shared {
 
         <div class="<?php echo $msgClassStr?> center" style="border-radius:3%">
         <div class="clearfix"style="height:0px"></div>
-        <p class="bold" style="margin:0"><?php echo $msg?></p>
+        <p class="bold NavberSubMsg" ><?php echo $msg?></p>
         </div>
 
         <!-- <div class="" style="height:80px"></div> -->
@@ -81,7 +81,7 @@ class Shared {
         <ul id="slide-out" class="sidenav">
         <div class="user-view center">
             <img src="assets/hotelLogo.png" alt="" width="250">
-            <span style="font-size:1.3em">Rahim</span><br>
+            <span style="font-size:1.5em">Rahim</span><br>
             <span>rahimisthebest@gmail.com</span>
             <hr>
         </div>
@@ -92,7 +92,7 @@ class Shared {
         
         
         <li>
-            <a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            <a href="index.php"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
         </li>
 
         </ul>

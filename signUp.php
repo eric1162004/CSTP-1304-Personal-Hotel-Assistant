@@ -3,10 +3,9 @@ require_once("inc/utilities/Shared.class.php");
 Shared::header("Personal Hotel App Login");
 ?>
 
-<div class="row fullheight valign-wrapper">
+<div class="row center-align" >
 
-<div class="row center-align">
-    <div class="col">
+<div class="col s12 m8 offset-m2" style="padding:25px 20px 100px 20px">
 
     <a href="index.php">
     <img src="assets/hotelLogo.png" alt="hotel logo" width="200px">
@@ -18,35 +17,30 @@ Shared::header("Personal Hotel App Login");
         <i class="material-icons prefix">account_circle</i>
         <input id="icon_prefix" type="text" class="validate">
         <label for="icon_prefix">First Name</label>
-        <i class="material-icons prefix">check</i>
     </div>
     
     <div class="input-field">
         <i class="material-icons prefix">account_circle</i>
         <input id="icon_prefix" type="text" class="validate">
         <label for="icon_prefix">Last Name</label>
-        <i class="material-icons prefix">check</i>
     </div>
 
     <div class="input-field">
         <i class="material-icons prefix">email</i>
         <input id="icon_prefix" type="text" class="validate">
         <label for="icon_prefix">Email</label>
-        <i class="material-icons prefix">check</i>
     </div>
 
     <div class="input-field">
         <i class="material-icons prefix">lock</i>
         <input id="icon_prefix" type="text" class="validate">
         <label for="icon_prefix">Password</label>
-        <i class="material-icons prefix">check</i>
     </div>
 
     <div class="input-field">
         <i class="material-icons prefix">lock</i>
         <input id="icon_prefix" type="text" class="validate">
         <label for="icon_prefix">Confirm Password</label>
-        <i class="material-icons prefix">check</i>
     </div>
 
     <label>

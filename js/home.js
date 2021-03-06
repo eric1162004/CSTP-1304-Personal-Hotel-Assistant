@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    $('.carousel').carousel({
-        indicators: true
+    var caro = $('.carousel').carousel({
+        indicators: true,
     });
+
+    $('.carousel').carousel();
+    setInterval(function() {
+      $('.carousel').carousel('next');
+    }, 3000);   
 
     // Close Popup StayInfo
     document.getElementById("box1Toggle").addEventListener("click", ()=>{

@@ -4,17 +4,23 @@ Shared::header("Personal Hotel App Checkin", "css/checkin.css");
 Shared::navbar("You have not checked in.", "red-text yellow");
 ?>
 
-<div class="container fullheight valign-wrapper" style="margin-top: 70px">
+<div class="row" >
+
+<div class="col s12 m8 offset-m2" style="padding:25px 20px 100px 20px">
   
   <div class="row">
     <div class="col s12 center">
-      <img class="responsive-img" src="assets/hotelLogo.png" alt="hotel logo">
-      <hr>
+      <img class="responsive-img" src="assets/checkin.png" alt="hotel logo" width="250">
   </div>
   
   <div class="col s12">
     <form>
-    <h5>Booking Info</h5>
+      <h5>Booking Info</h5>
+      <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Booking Reference Number</label>
+      </div>
     <div class="input-field">
           <i class="material-icons prefix">account_circle</i>
           <input id="icon_prefix" type="text" class="validate">

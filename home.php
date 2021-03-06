@@ -6,17 +6,16 @@ Shared::navbar("Day 1 at Hotel Prometheus.");
 ?>
 
 <!-- Carousel Section -->
-<div class="carousel bg-pan-left">
+<div class="carousel" style="height: 280px;">
     <a class="carousel-item" href="#five!" id="stayInfoIcon"><img src="assets/stayInfoIcon.png"></a>
     <a class="carousel-item" href="#five!" id="hotelKeyIcon"><img src="assets/hotelKeyIcon.png"></a>
     <a class="carousel-item" href="#five!" id="hotelUsageIcon"><img src="assets/hotelUsageIcon.png"></a>
     <a class="carousel-item" href="#five!" id="housekeepingIcon"><img src="assets/housekeepingIcon.png"></a>
 </div>
 
-
 <!-- Suggestion Section -->
-<div class="suggestionBox ">
-<span class="suggestionBoxTitle">Suggestions to do:</span>
+<div class="suggestionBox" style="padding: 10px 0;">
+<span class="suggestionBoxTitle">To-do Suggestions:</span>
 <br>
 <div class="container scrolling-wrapper">
     <div class="suggestion-label red"><a href="#!" class="collection-item">Reservation</a></div>
@@ -30,16 +29,16 @@ Shared::navbar("Day 1 at Hotel Prometheus.");
 
 <!-- Message Section  -->
 <div class="container row" id="textMessageBox" style="display:none">
-<div class="col s9">
+<div class="col s8 offset-m1 " style="padding: 10px 0;">
     <input type="text" name="textMessage" id="textMessage" placeholder="I want to order a burgar" >
 </div>
-<div class="col s3 ">
+<div class="col s3">
     <div class="btn" style="width:80px"><i class="far fa-paper-plane"></i></div>
 </div>
 </div>   
 
 <!-- Interactive Section -->
-<div class="row center interactiveBar">
+<div class="row center interactiveBar" style="padding:0 0 25px 0">
     <div class="col s3 interactiveIcon-side">
         <i class="fas fa-volume-up" onclick="toggleVolume(this)"></i>
     </div>
@@ -56,6 +55,12 @@ Shared::navbar("Day 1 at Hotel Prometheus.");
     <div class="col s3 interactiveIcon-side">
         <i class="fas fa-keyboard" id="keyboardIcon"></i>
     </div>
+    
+</div>
+    
+<div class="speechbubble bubbletrig">Talk to me <i class="fab fa-android heartbeat"></i></div>
+
+<div>
 </div>
 
 <!-- Hidden PopUp Boxes -->
@@ -64,6 +69,7 @@ Shared::navbar("Day 1 at Hotel Prometheus.");
 $box1 = 
 '
 <div class="col s12">
+<br>
 <p>Guest Name: Rahim V.</p>
 </div>
 <div class="col s12">
@@ -90,6 +96,7 @@ $box2 =
 
 $box3 =
 '<div class="col s12 center" >
+<br>
     <img src="assets/houseKeeperImg.jpg" alt="HouseKeeperImg" width="200" style="border-radius:100%">
 </div>
 <div class="col s12">
@@ -99,9 +106,13 @@ $box3 =
     <p>Scheduled Time: 08:30am - 08:45am</p>
 </div>';
 
+date_default_timezone_set("America/Vancouver");
+$time = date("h:i:sa");
+
 $box4 = '
 <div class="col s12">
-<p class="right">@8:00am</p>
+<br>
+<p class="center">At '.$time.'</p>
 <canvas id="myChart" width=1 height=1.1></canvas>
 </div>
 ';
