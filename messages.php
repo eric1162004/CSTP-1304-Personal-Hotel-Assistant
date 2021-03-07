@@ -25,7 +25,7 @@ Shared::header("Personal Hotel App Messages", "css/messages.css");
 <!-- Message Section  -->
 <div class=" row" id="textMessageBox" style="display:none">
 <div class="col s8 offset-m1 " style="padding: 10px 0;">
-    <input type="text" name="textMessage" id="textMessage" placeholder="Let me what you want?" >
+    <input type="text" name="textMessage" id="textMessage" placeholder="Tell me what you want?" >
 </div>
 <div class="col s3">
     <a href="#" onclick="sendMessage()"><div class="btn" style="width:80px"><i class="far fa-paper-plane"></i></div></a>
