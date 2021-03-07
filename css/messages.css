@@ -1,0 +1,42 @@
+.backButton{
+    font-size:1.5em; 
+    margin:10px 30px;
+}
+
+.messages {
+    height:420px; 
+    overflow: auto;
+    display: flex;
+    flex-direction:column;
+    bottom: 0;
+    margin:0; 
+    border: none;
+    background-color: black;
+    color:rgba(240, 248, 255, 0.76);
+}
+.messages li {
+    margin: 5px;
+    padding: 10px;
+    background-color:transparent !important;
+    border-bottom: none !important;
+}
+.messages .row {
+    background-color:rgba(255, 249, 249, 0.342) !important;
+    border-radius: 2%;
+}
+.messages .fa-android {
+    font-size:2em; 
+    top:20px; 
+    position:relative;
+}
+
+.messages li>div{
+    margin:0;
+}
+.userMsgWidth{
+    font-size:1.2em; 
+    width:100%;
+}
+.androidMsgSize{
+    font-size:1.2em
+}

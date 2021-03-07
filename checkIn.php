@@ -80,7 +80,7 @@ Shared::navbar("You have not checked in.", "red-text yellow");
     </div>
     
     <div class="row center">
-      <a href="#" class="btn waves-effect waves-light">
+      <a href="checkin.php" class="btn waves-effect waves-light">
         Reset
       </a>
       <a href="home.php" class="btn waves-effect waves-light">

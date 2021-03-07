@@ -48,15 +48,13 @@ Shared::header("Personal Hotel App Login");
 
     <div class="col s12">
     <a href="signUp.php"><button class="waves-effect waves-light btn" name="signUpBtn">Sign Up</button></a>
-    <button class="waves-effect waves-light btn mg-2" name="loginBtn">Login</button>
+    <a href="home.php"><button class="waves-effect waves-light btn" name="loginBtn">Login</button></a>
     </div>
 
     </div>
 
     </div>
 </div>
-
-<script src="js/home.js"></script>
 
 <?php
 Shared::footer();

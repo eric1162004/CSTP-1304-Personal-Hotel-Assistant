@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    var caro = $('.carousel').carousel({
+    $('.carousel').carousel({
         indicators: true,
     });
 
@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(function() {
       $('.carousel').carousel('next');
     }, 3000);   
+
+    // initialize suggestion items
+    addSuggestions()
 
     // Close Popup StayInfo
     document.getElementById("box1Toggle").addEventListener("click", ()=>{
@@ -88,25 +91,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// toggle volume icon
-function toggleVolume(icon) {
-    className = icon.classList[1];
-    icon.classList = (className === "fa-volume-up")? 
-    "fa fa-volume-mute red-text": "fa fa-volume-up";
+function navigateToMessage(){
+    text = document.getElementById('textMessage').value;
+
+    if(text !== ''){
+        window.location.href = "messages.php?q="+text;
+    }
 }
 
-//toggle Speaker on/off
-function onMouseDownSpeaker(icon) {
-    icon.classList = "fas fa-microphone red-text";
+function addSuggestions(){
+
+    var suggestionItems = [        
+    {msg:'Call me a cab to the Casino', color:'red'},
+    {msg:'Order me a burger', color:'green'},
+    {msg:'Reserve me a spot at the restaurant', color:'yellow'},
+    {msg:'Book me a spa appointment for 9:00am today', color:'blue'}
+    ];
+    
+    suggestions = document.getElementById("suggestions");
+
+    suggestionItems.forEach((item)=>{
+        div = document.createElement('div');
+        a = document.createElement('a');
+    
+        div.className = "suggestion-label "+ item.color;
+        a.href ="messages.php?q="+item.msg;
+        a.className = "collection-item";
+        a.innerText = item.msg;
+    
+        div.appendChild(a);
+        suggestions.appendChild(div);
+    })
+
+
 }
-function onMouseUpSpeaker(icon) {
-    icon.classList = "fas fa-microphone ";
-}
-
-// toggle input message control
-$("#keyboardIcon").click(function(){
-    console.log("hello");
-    $("#textMessageBox").slideToggle();
-});
-
-

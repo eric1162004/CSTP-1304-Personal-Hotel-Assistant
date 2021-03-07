@@ -10,6 +10,9 @@ class Shared {
                 <!--Let browser know website is optimized for mobile-->
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+                <!-- FavIcon -->
+                <link rel="shortcut icon" type="image/jpg" href="assets/hotelLogo.png"/>
+
                 <!-- Compiled and minified CSS -->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -33,20 +36,6 @@ class Shared {
 
     <?php }
 
-
-    static function footer() { ?>
-        <!-- Jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        
-        <script src="js/shared.js"></script>
-    
-        </body>
-        </html>
-
-    <?php }
-
     static function navbar($msg="Stay with us feel like home.", $msgClassStr="cyan lighten-1 grey-text text-darken-3") { ?>
 
         <nav class="z-depth-1">
@@ -56,16 +45,27 @@ class Shared {
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
         <span class="bold" style="font-size:1.6em">Good Day, Rahim</span>
         </div>
+    
+        <div class="right">
+            <ul class="hide-on-small-only">
+                <li>
+                    <a href="#"><i class="fas fa-headset"></i></a>
+                </li>
+                <li>
+                <a href="messages.php"><i class="far fa-comment-dots"></i></a>
+                </li>
+                <li >
+                    <a href="index.php"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </div>
 
-        <div class="col right">
-        <ul class="hide-on-small-only">
-            <li>
-            <a href="#"><i class="fas fa-headset"></i></a>
-            </li>
-            <li>
-            <a href="index.php"><i class="fas fa-sign-out-alt"></i></a>
-            </li>
-        </ul>
+        <div class="col right hide-on-med-and-up" style="margin:0">
+            <ul >
+                <li>
+                    <a href="messages.php"><i class="far fa-comment-dots"></i></a>
+                </li>
+            </ul>
         </div>
 
         </div>  
@@ -100,7 +100,24 @@ class Shared {
         
     <?php }
 
+    static function addJquery() {?>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <?php }
 
+
+    static function footer() { ?>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script> -->
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <script src="js/shared.js"></script>
+
+        </body>
+        </html>
+
+    <?php }
 
 
 }

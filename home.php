@@ -15,25 +15,23 @@ Shared::navbar("Day 1 at Hotel Prometheus.");
 
 <!-- Suggestion Section -->
 <div class="suggestionBox" style="padding: 10px 0;">
-<span class="suggestionBoxTitle">To-do Suggestions:</span>
-<br>
-<div class="container scrolling-wrapper">
-    <div class="suggestion-label red"><a href="#!" class="collection-item">Reservation</a></div>
-    <div class="suggestion-label"><a href="#!" class="collection-item">Reservation</a></div>
-    <div class="suggestion-label yellow"><a href="#!" class="collection-item">Reservation</a></div>
-    <div class="suggestion-label blue"><a href="#!" class="collection-item">Reservation</a></div>
-    <div class="suggestion-label"><a href="#!" class="collection-item">Reservation</a></div>
-    <div class="suggestion-label red"><a href="#!" class="collection-item">Reservation</a></div>
-</div>
+
+    <div class="container">
+        <span class="suggestionBoxTitle">To-do Suggestions:</span><br>
+    </div>
+
+    <div class="container scrolling-wrapper" id="suggestions">
+
+    </div>
 </div>
 
 <!-- Message Section  -->
-<div class="container row" id="textMessageBox" style="display:none">
+<div class=" row" id="textMessageBox" style="display:none">
 <div class="col s8 offset-m1 " style="padding: 10px 0;">
-    <input type="text" name="textMessage" id="textMessage" placeholder="I want to order a burgar" >
+    <input type="text" name="textMessage" id="textMessage" placeholder="Tell me what you want" >
 </div>
 <div class="col s3">
-    <div class="btn" style="width:80px"><i class="far fa-paper-plane"></i></div>
+    <a href="#" onclick="navigateToMessage()"><div class="btn" style="width:80px"><i class="far fa-paper-plane"></i></div></a>
 </div>
 </div>   
 
@@ -55,10 +53,10 @@ Shared::navbar("Day 1 at Hotel Prometheus.");
     <div class="col s3 interactiveIcon-side">
         <i class="fas fa-keyboard" id="keyboardIcon"></i>
     </div>
-    
 </div>
-    
-<div class="speechbubble bubbletrig">Talk to me <i class="fab fa-android heartbeat"></i></div>
+
+<!-- Talk to me label -->
+<div class="TalkToMeBox">Talk to me <i class="fab fa-android heartbeat"></i></div>
 
 <div>
 </div>
@@ -124,11 +122,10 @@ PopUp::PopUpBoxes($box4, "box4", "Hotel Usage");
 
 ?>
 
+<!-- Add Jquery -->
+<?php Shared::addJquery() ?>
 <!-- Script for chart.js -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script src="js/home.js"></script>
+<script src="js/home.js"></script> 
 
-<?php
-Shared::footer();
-?>
+<?php Shared::footer(); ?>
