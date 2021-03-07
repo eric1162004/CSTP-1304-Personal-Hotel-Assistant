@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
         indicators: true,
     });
 
-    $('.carousel').carousel();
-    setInterval(function() {
-      $('.carousel').carousel('next');
-    }, 3000);   
+    // $('.carousel').carousel();
+    // setInterval(function() {
+    //   $('.carousel').carousel('next');
+    // }, 3000);   
 
     // initialize suggestion items
     addSuggestions()
@@ -102,10 +102,10 @@ function navigateToMessage(){
 function addSuggestions(){
 
     var suggestionItems = [        
-    {msg:'Call me a cab to the Casino', color:'red'},
-    {msg:'Order me a burger', color:'green'},
-    {msg:'Reserve me a spot at the restaurant', color:'yellow'},
-    {msg:'Book me a spa appointment for 9:00am today', color:'blue'}
+    {msg:'Call a cab to the Casino', color:'red'},
+    {msg:'Order a burger', color:'green'},
+    {msg:'Reserve a spot at the restaurant', color:'yellow'},
+    {msg:'Book a spa appointment for 9:00am today', color:'blue'}
     ];
     
     suggestions = document.getElementById("suggestions");

@@ -91,7 +91,7 @@ $box1 =
 $box2 = 
 '<div class="col s12 center">
     <img class="vibrate-2" src="assets/keyCard.png" alt="key card" width="100%">
-    <h5 class="green-text bold">Ready To Tap!</h5>
+    <h5 class="green-text bold">Ready To Use!</h5>
 </div>';
 
 $box3 =
