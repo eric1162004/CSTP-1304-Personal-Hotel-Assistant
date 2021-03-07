@@ -33,13 +33,13 @@ Shared::header("Personal Hotel App Login");
 
     <div class="input-field">
         <i class="material-icons prefix">lock</i>
-        <input id="password" type="text" class="validate">
+        <input id="password" type="password" class="validate">
         <label for="password">Password</label>
     </div>
 
     <div class="input-field">
         <i class="material-icons prefix">lock</i>
-        <input id="confirmPassword" type="text" class="validate">
+        <input id="confirmPassword" type="password" class="validate">
         <label for="confirmPassword">Confirm Password</label>
     </div>
 
