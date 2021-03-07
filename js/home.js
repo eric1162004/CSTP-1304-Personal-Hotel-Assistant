@@ -110,7 +110,7 @@ function addSuggestions(){
     
     suggestions = document.getElementById("suggestions");
 
-    suggestionItems.forEach((item)=>{
+    suggestionItems.forEach((item)=>{ 
         div = document.createElement('div');
         a = document.createElement('a');
     
