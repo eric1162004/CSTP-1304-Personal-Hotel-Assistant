@@ -22,14 +22,9 @@ Shared::navbar("You have not checked in.", "red-text yellow");
             <label for="bookingReference">Booking Reference Number</label>
       </div>
     <div class="input-field">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="firstName" type="text" class="validate">
-          <label for="firstName">First Name</label>
-    </div>
-    <div class="input-field">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="lastName" type="text" class="validate">
-          <label for="lastName">Last Name</label>
+          <i class="material-icons prefix">call</i>
+          <input id="contactNumber" type="tel" class="validate">
+          <label for="contactNumber">Contact Number</label>
     </div>
 
     <h5>Credit Card Info <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i></h5>
