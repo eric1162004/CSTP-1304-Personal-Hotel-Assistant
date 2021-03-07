@@ -42,9 +42,11 @@ Shared::navbar("You have not checked in.", "red-text yellow");
 
     <div class="row">
 
-    <div class="input-field col s4">
-    <i class="far fa-calendar-alt prefix"></i>
-    <select>
+    <div class="col s1 input-field">
+      <i class="far fa-calendar-alt" style="font-size:2.3em"></i>
+    </div>
+    <div class="input-field col s3">
+    <select class="browser-default browser-selector">
       <option value="" disabled selected>Month</option>
       <option value="1">Jan</option>
       <option value="2">Feb</option>
@@ -61,8 +63,8 @@ Shared::navbar("You have not checked in.", "red-text yellow");
     </select>
     </div>
 
-    <div class="col s3">
-    <select>
+    <div class="col s3 input-field ">
+    <select class="browser-default browser-selector">
       <option value="" disabled selected>Year</option>
       <option value="2021">2021</option>
       <option value="2022">2022</option>
