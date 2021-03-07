@@ -52,7 +52,7 @@ function sendMessage(customerMsg){
     }
 }
 
-function replyMessage(messages){
+function replyMessage(messages){ 
 
     replies = ["Ok.", "Wise choice!", "Absolutely.", "Will Do that!", "Roger that!", "Very Well."];
     pos = Math.floor(Math.random() * replies.length);
