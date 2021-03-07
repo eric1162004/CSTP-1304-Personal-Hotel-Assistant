@@ -124,6 +124,10 @@ input:not([type]).validate+label, input[type=text]:not(.browser-default).validat
     border-radius: 0% !important;
     margin-left: 7px;
 }
+.browser-selector:focus{
+    outline: none;
+}
+
 .browser-selector:active{
     border-bottom: none !important;
 }
