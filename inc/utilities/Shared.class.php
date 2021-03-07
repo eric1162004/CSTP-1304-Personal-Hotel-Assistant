@@ -43,10 +43,11 @@ class Shared {
 
         <div class="col">
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-        <span class="bold" style="font-size:1.6em">Good Day, Rahim</span>
+        <span class="bold hide-on-med-and-up" style="font-size:1.4em">Good Day, Rahim</span>
+        <span class="bold hide-on-small-only" style="font-size:1.8em">Good Day, Rahim</span>
         </div>
     
-        <div class="right">
+        <div class="col right">
             <ul class="hide-on-small-only">
                 <li>
                     <a href="#" onclick="openLiveCall()"><i class="fas fa-headset"></i></a>
