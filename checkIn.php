@@ -18,26 +18,26 @@ Shared::navbar("You have not checked in.", "red-text yellow");
       <h5>Booking Info</h5>
       <div class="input-field">
             <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
-            <label for="icon_prefix">Booking Reference Number</label>
+            <input id="bookingReference" type="text" class="validate">
+            <label for="bookingReference">Booking Reference Number</label>
       </div>
     <div class="input-field">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">First Name</label>
+          <input id="firstName" type="text" class="validate">
+          <label for="firstName">First Name</label>
     </div>
     <div class="input-field">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Last Name</label>
+          <input id="lastName" type="text" class="validate">
+          <label for="lastName">Last Name</label>
     </div>
 
     <h5>Credit Card Info <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i></h5>
     
     <div class="input-field">
       <i class="far fa-credit-card prefix"></i>
-      <input id="icon_prefix" type="text" class="validate">
-      <label for="icon_prefix">Credit Card Number</label>
+      <input id="creditCardNumber" type="text" class="validate">
+      <label for="creditCardNumber">Credit Card Number</label>
     </div>
 
     <div class="row">
@@ -73,8 +73,8 @@ Shared::navbar("You have not checked in.", "red-text yellow");
     </div>
 
     <div class="input-field col s5">
-      <input id="icon_prefix" type="text" class="validate">
-      <label for="icon_prefix">CVV</label>
+      <input id="cvv" type="text" class="validate">
+      <label for="cvv">CVV</label>
     </div>
     
     </div>
