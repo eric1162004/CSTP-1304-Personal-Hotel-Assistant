@@ -43,7 +43,7 @@ class Shared {
 
         <div class="col">
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-        <span class="bold hide-on-med-and-up" style="font-size:1.4em">Good Day, Rahim</span>
+        <span class="bold hide-on-med-and-up" style="font-size:1.4em">Good Day!</span>
         <span class="bold hide-on-small-only" style="font-size:1.8em">Good Day, Rahim</span>
         </div>
     
