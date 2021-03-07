@@ -127,6 +127,9 @@ input:not([type]).validate+label, input[type=text]:not(.browser-default).validat
 .browser-selector:focus{
     outline: none;
 }
+.browser-selector:mousedown{
+    
+}
 
 .browser-selector:active{
     border-bottom: none !important;
@@ -204,6 +207,18 @@ input:not([type]).validate+label, input[type=text]:not(.browser-default).validat
 }
 #textMessage{
     color:#B6C1D0 !important;
+}
+
+/* Live Call */
+#liveCall{
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    padding:50px;
+    
 }
 
 

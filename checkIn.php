@@ -97,6 +97,8 @@ Shared::navbar("You have not checked in.", "red-text yellow");
 </div>
 </div>
 
+<?php Shared::addLiveCallSection()?>
+
 <!-- Add Jquery -->
 <?php Shared::addJquery() ?>
 

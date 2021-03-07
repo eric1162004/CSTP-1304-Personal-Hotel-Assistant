@@ -49,7 +49,7 @@ class Shared {
         <div class="right">
             <ul class="hide-on-small-only">
                 <li>
-                    <a href="#"><i class="fas fa-headset"></i></a>
+                    <a href="#" onclick="openLiveCall()"><i class="fas fa-headset"></i></a>
                 </li>
                 <li>
                 <a href="messages.php"><i class="far fa-comment-dots"></i></a>
@@ -86,8 +86,8 @@ class Shared {
             <hr>
         </div>
         
-        <li>
-            <a href="#"><i class="fas fa-headset"></i> Live Chat With Us</a>
+        <li onclick="openLiveCall()">
+            <a href="#" ><i class="fas fa-headset"></i> Live Chat With Us</a>
         </li>
         
         
@@ -98,6 +98,25 @@ class Shared {
         </ul>
 
         
+    <?php }
+
+    static function addLiveCallSection() {?>
+        <div id="liveCall" style="display:none">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+        </div>
+        <h1 style="color:white;">Connecting..</h1> 
+        <h3 style="color:white;">Please wait..</h3>
+        <a class="waves-effect waves-light btn red" onclick="closeLiveCall()">Cancel Call</a>
+        </div>
     <?php }
 
     static function addJquery() {?>

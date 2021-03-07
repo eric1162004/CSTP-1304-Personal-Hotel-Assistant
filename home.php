@@ -61,6 +61,8 @@ Shared::navbar("Day 1 at Hotel Prometheus.");
 <div>
 </div>
 
+<?php Shared::addLiveCallSection()?>
+
 <!-- Hidden PopUp Boxes -->
 <?php 
 
