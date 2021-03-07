@@ -58,6 +58,9 @@ Shared::header("Personal Hotel App Login");
 
 </div>
 
+<!-- Add Jquery -->
+<?php Shared::addJquery() ?>
+
 <?php
 Shared::footer();
 ?>

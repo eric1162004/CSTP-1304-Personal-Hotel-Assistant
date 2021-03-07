@@ -92,11 +92,21 @@ Shared::navbar("You have not checked in.", "red-text yellow");
     </form>
   </div>
   
-  
-  
 </div>
 </div>
-  
+
+<!-- Add Jquery -->
+<?php Shared::addJquery() ?>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems);
+});
+
+</script>
+
 <?php
 Shared::footer();
 ?>
