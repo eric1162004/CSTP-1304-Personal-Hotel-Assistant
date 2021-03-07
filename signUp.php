@@ -15,32 +15,32 @@ Shared::header("Personal Hotel App Login");
 
     <div class="input-field">
         <i class="material-icons prefix">account_circle</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">First Name</label>
+        <input id="firstName" type="text" class="validate">
+        <label for="firstName">First Name</label>
     </div>
     
     <div class="input-field">
         <i class="material-icons prefix">account_circle</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">Last Name</label>
+        <input id="lastName" type="text" class="validate">
+        <label for="lastName">Last Name</label>
     </div>
 
     <div class="input-field">
         <i class="material-icons prefix">email</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">Email</label>
+        <input id="email" type="text" class="validate">
+        <label for="email">Email</label>
     </div>
 
     <div class="input-field">
         <i class="material-icons prefix">lock</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">Password</label>
+        <input id="password" type="text" class="validate">
+        <label for="password">Password</label>
     </div>
 
     <div class="input-field">
         <i class="material-icons prefix">lock</i>
-        <input id="icon_prefix" type="text" class="validate">
-        <label for="icon_prefix">Confirm Password</label>
+        <input id="confirmPassword" type="text" class="validate">
+        <label for="confirmPassword">Confirm Password</label>
     </div>
 
     <label>
