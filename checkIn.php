@@ -1,7 +1,7 @@
 <?php 
 require_once("inc/utilities/Shared.class.php");
 Shared::header("Personal Hotel App Checkin", "css/checkin.css");
-Shared::navbar("You have not checked in.", "red-text yellow");
+Shared::navbar("You have not checked in.", "red-text yellow"); 
 ?>
 
 <div class="row" >
@@ -61,7 +61,7 @@ Shared::navbar("You have not checked in.", "red-text yellow");
     </select>
     </div>
 
-    <div class="input-field col s3">
+    <div class="col s3">
     <select>
       <option value="" disabled selected>Year</option>
       <option value="2021">2021</option>
@@ -80,7 +80,7 @@ Shared::navbar("You have not checked in.", "red-text yellow");
     </div>
     
     <div class="row center">
-      <a href="checkin.php" class="btn waves-effect waves-light">
+      <a href="#" class="btn waves-effect waves-light">
         Reset
       </a>
       <a href="home.php" class="btn waves-effect waves-light">
