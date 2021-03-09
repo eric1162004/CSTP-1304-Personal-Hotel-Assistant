@@ -77,7 +77,7 @@ Shared::navbar("You have not checked in.", "red-text yellow");
     </div>
     
     <div class="row center">
-      <a href="#" class="btn waves-effect waves-light">
+      <a href="#" class="btn waves-effect waves-light" onclick="resetForm()">
         Reset
       </a>
       <a href="home.php" class="btn waves-effect waves-light">
@@ -97,14 +97,7 @@ Shared::navbar("You have not checked in.", "red-text yellow");
 <!-- Add Jquery -->
 <?php Shared::addJquery() ?>
 
-<script>
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems);
-});
-
-</script>
+<script src="js/checkin.js"></script>
 
 <?php
 Shared::footer();
