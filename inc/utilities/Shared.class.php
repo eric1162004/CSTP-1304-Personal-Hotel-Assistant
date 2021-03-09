@@ -64,7 +64,7 @@ class Shared {
         <div class="col right hide-on-med-and-up" style="margin:0">
             <ul >
                 <li>
-                    <a href="messages.php"><i class="far fa-comment-dots"></i></a>
+                    <a href="<?php Shared::currentLocation()?>"><i class="far fa-comment-dots"></i></a>
                 </li>
             </ul>
         </div>
@@ -100,6 +100,12 @@ class Shared {
 
         
     <?php }
+
+    static function currentLocation(){
+        $location = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);  
+        $location = str_replace(".php", "", $location);
+        echo "messages.php?location=".$location;
+    }
 
     static function addLiveCallSection() {?>
         <div id="liveCall" style="display:none">

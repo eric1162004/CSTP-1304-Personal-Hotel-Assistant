@@ -95,7 +95,7 @@ function navigateToMessage(){
     text = document.getElementById('textMessage').value;
 
     if(text !== ''){
-        window.location.href = "messages.php?q="+text;
+        window.location.href = "messages.php?q="+text+"&location=home";
     }
 }
 
@@ -115,7 +115,7 @@ function addSuggestions(){
         a = document.createElement('a');
     
         div.className = "suggestion-label "+ item.color;
-        a.href ="messages.php?q="+item.msg;
+        a.href ="messages.php?q="+item.msg+"&location=home";
         a.className = "collection-item";
         a.innerText = item.msg;
     

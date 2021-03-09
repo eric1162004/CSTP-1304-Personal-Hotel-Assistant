@@ -4,7 +4,7 @@ Shared::header("Personal Hotel App Messages", "css/messages.css");
 ?>
 
 <div class="row" style="margin:0">
-    <div class="col s-12 right" ><a href="home.php"><i class="fas fa-arrow-left backButton"></i></a></div>
+    <div class="col s-12 right" ><a href="<?php echo $_GET['location'].'.php'?>"><i class="fas fa-arrow-left backButton"></i></a></div>
 </div>
 
 <ul class="collection messages" id="messages">

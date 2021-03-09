@@ -44,7 +44,7 @@ Shared::header("Personal Hotel App Login");
     </div>
 
     <label>
-        <input type="checkbox" class="filled-in" checked="checked" />
+        <input type="checkbox" class="filled-in"/>
         <span>I agree to the terms & conditions.</span>
     </label>
 
